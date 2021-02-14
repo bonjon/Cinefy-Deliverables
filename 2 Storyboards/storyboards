@@ -17,6 +17,9 @@
     .menu{
      margin-left:20px;
      }
+     .info{
+        text-size:11px;	     
+      }
 
     </style>
     <meta charset="utf-8">
@@ -24,7 +27,7 @@
   <body>
   <h1>Storyboard</h1>
   <h2>Menù</h2>
-  <a class="menu" href="#login">Login</a>
+  <a class="menu" href="#login">Login </a>
 <br>
   <a class="menu" href="#makeQuestion">Beginner user question view</a>
 <br>
@@ -32,11 +35,15 @@
 <br>
  <a class="menu" href="#receivedQuestions">Advanced user's list of received questions</a>
 <br>
- <a class="menu" href="#selQuestion">Advanced user selected question</a>
+ <a class="menu" href="#selQuestion">Advanced user selected question </a>
 <br>
 <br>
   <h2>Login</h2>
-  <img class = "bg" id = "login" src = "img/Login.png">  
+  <img class = "bg" id = "login" src = "img/Login.png" usemap="#loginmap">
+  <map name="loginmap">
+  <area shape="rect" coords="990,650,1100,730"  href="#receivedQuestions">
+  </map>
+  <h5 >You can click on "Login" button  (assume to sign in as an advanced user)</h5>  
 <br><br>
   <h2>Beginner user question view</h2>
   <img class = "bg" id = "makeQuestion" src = "img/MakeQuestion.png">
@@ -45,9 +52,19 @@
   <img class = "bg" id = "playlistDetails" src = "img/PlaylistDetails.png">
 <br><br>
   <h2>Advanced user's list of received questions</h2>
-  <img class = "bg" id = "receivedQuestions" src = "img/ReceivedQuestions.png">
+  <img class = "bg" id = "receivedQuestions" src = "img/ReceivedQuestions.png" usemap="#questionsmap">
+   <map name="questionsmap">
+   <area shape="rect" coords="330,178,565,221" href="#receivedQuestions">
+   <area shape="rect" coords="330,233,565,283"  href="#selQuestion">
+    <area shape="rect" coords="335,288,565,342" href="#receivedQuestions">
+  </map>
+  <h5 >You can click on cells which contain nicknames of beginner users</h5>
 <br><br>
   <h2>Advanced user selected question</h2>
-  <img class = "bg" id = "selQuestion" src = "img/AnswerSelectedQuestion.png">
+  <img class = "bg" id = "selQuestion" src = "img/AnswerSelectedQuestion.png" usemap="#selAnswermap">
+  <map name="selAnswermap">
+  <area shape="rect" coords="740,800,900,900"  href="#receivedQuestions">
+  </map>
+  <h5 >You can click on "Submit" button</h5> 
   </body>
 </html>
