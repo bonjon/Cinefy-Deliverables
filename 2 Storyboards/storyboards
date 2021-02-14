@@ -14,18 +14,40 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+    .menu{
+     margin-left:20px;
+     }
+
     </style>
     <meta charset="utf-8">
   </head>
   <body>
   <h1>Storyboard</h1>
-  <a href="#pica">Pica Giovanni</a>
-  <a href="#onorati">Onorati Jacopo</a>
-  <h2>Pica Giovanni</h2>
-  <img class = "bg" id = "pica" src = "img/MakeQuestion.png">
-  <img class = "bg" src = "img/PlaylistDetails.png">
-  <h2>Onorati Jacopo</h2>
-  <img class = "bg" id = "onorati" src = "img/Login.png">
-  <img class = "bg" src = "img/AnswerQuestion.png">
+  <h2>Menù</h2>
+  <a class="menu" href="#login">Login</a>
+<br>
+  <a class="menu" href="#makeQuestion">Beginner user question view</a>
+<br>
+ <a class="menu" href="#playlistDetails">Beginner user playlist view</a>
+<br>
+ <a class="menu" href="#receivedQuestions">Advanced user's list of received questions</a>
+<br>
+ <a class="menu" href="#selQuestion">Advanced user selected question</a>
+<br>
+<br>
+  <h2>Login</h2>
+  <img class = "bg" id = "login" src = "img/Login.png">  
+<br><br>
+  <h2>Beginner user question view</h2>
+  <img class = "bg" id = "makeQuestion" src = "img/MakeQuestion.png">
+<br><br>
+  <h2>Beginner user playlist view</h2>
+  <img class = "bg" id = "playlistDetails" src = "img/PlaylistDetails.png">
+<br><br>
+  <h2>Advanced user's list of received questions</h2>
+  <img class = "bg" id = "receivedQuestions" src = "img/ReceivedQuestions.png">
+<br><br>
+  <h2>Advanced user selected question</h2>
+  <img class = "bg" id = "selQuestion" src = "img/AnswerSelectedQuestion.png">
   </body>
 </html>
